@@ -1,0 +1,110 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Django
+*.log
+*.pot
+*.pyc
+*.pyo
+*.sqlite3
+db.sqlite3
+media/
+staticfiles/
+static/
+
+# Environment variables
+.env
+*.env
+
+# FastAPI
+*.log
+instance/
+*.db
+
+# Unit test / coverage reports
+.coverage
+.tox/
+.nox/
+*.cover
+*.py,cover
+.hypothesis/
+.pytest_cache/
+nosetests.xml
+coverage.xml
+*.coveragerc
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Pycharm
+.idea/
+
+# VSCode
+.vscode/
+
+# pipenv
+Pipfile.lock
+
+# Poetry
+poetry.lock
+
+# virtual environment
+env/
+venv/
+.venv/
+
+# MyPy
+.mypy_cache/
+
+# Pyre
+.pyre/
+
+# Pyright
+.pyright/
+
+# Local dev server artifacts
+instance/
+.webassets-cache
+
+# Celery
+celerybeat-schedule
+celerybeat.pid
+
+# Translations
+*.mo
+
+# Sphinx documentation
+docs/_build/
+
+# PyInstaller
+*.manifest
+*.spec
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Dist files
+dist/
+build/
+*.egg-info/
+.eggs/
+
+# Compiled files
+*.out
+*.prof
+*.dat
+*.profraw

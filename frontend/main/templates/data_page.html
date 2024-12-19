@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Page</title>
+</head>
+<body>
+    <h1>Data from FastAPI</h1>
+    <ul>
+        {% if data.error %}
+            <li>{{ data.error }}</li>
+        {% else %}
+            {% for item in data %}
+                <li>{{ item.key }}: {{ item.value }}</li>
+            {% endfor %}
+        {% endif %}
+    </ul>
+
+    <h2>Add New Item</h2>
+    <form id="add-item-form" method="post" action="{% url 'post_data' %}">
+        {% csrf_token %}
+        <label for="key">Key:</label>
+        <input type="text" id="key" name="key" required>
+        <label for="value">Value:</label>
+        <input type="text" id="value" name="value" required>
+        <button type="submit">Add Item</button>
+    </form>
+</body>
+</html>
